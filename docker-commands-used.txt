@@ -1,0 +1,25 @@
+"""
+sudo docker build -t sanjju-api-img .
+sudo docker images
+sudo docker run --name sanjju-api-img -d sanjju-api-img
+sudo docker ps 
+sudo docker exec 0it sanjju-api-img bash
+python3 app.py
+#kill port 
+kill lsof -t -i:5003
+sudo docker rmi sanjju-api-img
+"""
+
+conda activate ml38
+docker--version
+sudo docker ps
+sudo docker ps -a
+sudo docker build -t app-smthg-api-container .
+sudo docker stop app-smthg-api-container
+sudo docker run --name app-smthg-api-container -p 5001:5001 app-smthg-api-container
+sudo docker container rm app-smthg-api-container
+
+
+
+sudo docker ps | grep "api"
+sudo docker run --app-smthg-api-container
